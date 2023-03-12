@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.mainFrame{
+    width: 260px;
+    height: 290px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #33393E;
+    margin-top: 20px;
+}
+.contentFrame{
+    margin-top: 20px;
+    width: 200px;
+    height: 250px;
+    background-color: #33393E;
+}
+input, select{
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 2px;
+    height: 15px;
+}
+h2{
+    color: #FCBE08;
+    font-weight: 400;
+}
+.commentBar{
+    width: 200px;
+    height: 50px;
+}
+label{
+    font-size: 10px;
+    color: white;
+}
+button{
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+    border: 2px solid black;
+    background-color: #FCBE08 ;
+    box-shadow: 3px 3px black;;
+}

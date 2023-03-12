@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Survey Home Page</title>
+</head>
+<body>
+    <h1>⛩️ Welcome to the Dojo's Survey ⛩️ </h1>
+    <!--  Created this div to have a main frame  -->
+    <div class="mainFrame">
+        <div class="contentFrame">
+            <h2>Dojo Survey</h2>
+            <!-- This form helps re-direct the submitted data by user to our sevrer.py route -->
+            <form action='/submit' method='POST'>
+                <label for="">Your Name:</label>
+                <br>
+                <input name="name">
+                <div>
+                    <label for="">Favorite Location:</label>
+                    <br>
+                    <!-- Drop down select tag to choose current location -->
+                    <select name="select_location">
+                        <option value="location">-- Select a Location --</option>
+                        <option value="online">Online</option>
+                        <option value="online">San Jose</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="burbank">Burbank</option>
+                        <option value="bellevue">Bellevue</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Favorite Language:</label>
+                    <br>
+                    <!--  Drop down select tag to choose current favorite language -->
+                    <select name="favorite_language">
+                        <option value="language">-- Select a Language --</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="c-sharp">C#</option>
+                    </select>
+                </div>
+                
+                <label>Comment (optional):</label>
+                <br>
+                <!-- text box comment section -->
+                <input name="comment" class="commentBar">
+                
+                <!-- Button to submit our data and help push to our post method in our route decorator -->
+                <button> Submit </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
