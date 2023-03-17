@@ -7,7 +7,7 @@ app.secret_key = 'La Republica Dominicana 🇩🇴'
 
 # main page's route to display Dojo Survey 
 @app.route('/')
-def hello_world():
+def index():
     return render_template('survey.html')
 
 # Route is to pass our post data 
@@ -23,7 +23,7 @@ def submit():
 
 # Helps us go to our results page 
 @app.route('/results')
-def surveyInfo():
+def results():
     #  Rendering our results html page 
     return render_template('results.html')
 
